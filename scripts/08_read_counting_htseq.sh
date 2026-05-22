@@ -19,7 +19,7 @@ module load HTSeq/2.1.2-gfbf-2024a
 
 # Define paths
 BAM_DIR=/home/yesi4977/genome_analyses/analyses/06_RNA_mapping/bwa
-GFF=/home/yesi4977/genome_analyses/analyses/04_annotation/prokka/efaecium_E745.gff
+GFF=/home/yesi4977/genome_analyses/analyses/07_read_counting/htseq/efaecium_E745_clean.gff
 OUT_DIR=/home/yesi4977/genome_analyses/analyses/07_read_counting/htseq
 
 # Create output folder
