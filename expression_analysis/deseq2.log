@@ -1,0 +1,26 @@
+Genes after filtering: 2912 
+
+=== DESeq2 Results Summary ===
+
+out of 2912 with nonzero total read count
+adjusted p-value < 0.05
+LFC > 0 (up)       : 1152, 40%
+LFC < 0 (down)     : 1126, 39%
+outliers [1]       : 0, 0%
+low counts [2]     : 0, 0%
+(mean count < 2)
+[1] see 'cooksCutoff' argument of ?results
+[2] see 'independentFiltering' argument of ?results
+
+
+Total significant DEGs: 1288 
+Upregulated in serum: 654 
+Downregulated in serum: 634 
+null device 
+          1 
+null device 
+          1 
+
+DESeq2 analysis complete!
+Results saved to: /home/yesi4977/genome_analyses/analyses/08_differential_expression/deseq2 
+DESeq2 finished!
