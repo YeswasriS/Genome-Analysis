@@ -1,3 +1,4 @@
+.libPaths(c("/home/yesi4977/R/library", .libPaths()))
 # ============================================
 # Phase 4 - Differential Expression Analysis
 # Tool: DESeq2
