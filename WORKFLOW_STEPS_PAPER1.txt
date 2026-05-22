@@ -1,0 +1,50 @@
+WORKFLOW STEPS — PAPER I (Zhang et al. 2017)
+============================================
+
+STEP 1: Genome Assembly
+- Tool: Canu
+- Input: PacBio long reads
+- Output: pacbio_canu.contigs.fasta
+- Script: scripts/02_genome_assembly.sh
+
+STEP 2: Assembly Evaluation
+- Tool: QUAST
+- Input: pacbio_canu.contigs.fasta
+- Output: report.txt
+- Script: scripts/03_assembly_evaluation_quast.sh
+
+STEP 3: Genome Annotation
+- Tool: Prokka
+- Input: pacbio_canu.contigs.fasta
+- Output: efaecium_E745.gff, efaecium_E745.faa
+- Script: scripts/04_annotation_prokka.sh
+
+STEP 4: RNA-seq Quality Control
+- Tool: FastQC
+- Input: Raw RNA-seq reads
+- Output: FastQC HTML reports
+- Script: scripts/05_RNA_fastqc_raw.sh
+
+STEP 5: RNA-seq Trimming
+- Tool: Trimmomatic
+- Input: Raw RNA-seq reads
+- Output: Trimmed paired reads
+- Script: scripts/06_RNA_trimmomatic.sh
+
+STEP 6: RNA Mapping
+- Tool: BWA + SAMtools
+- Input: Pre-trimmed RNA-seq reads
+- Output: BAM files
+- Script: scripts/07_RNA_mapping_bwa.sh
+
+STEP 7: Read Counting
+- Tool: HTSeq
+- Input: BAM files + clean GFF file
+- Output: Count tables
+- Script: scripts/08_read_counting_htseq.sh
+
+STEP 8: Differential Expression
+- Tool: DESeq2 (R)
+- Input: Count tables
+- Output: DEG results
+- Script: scripts/09_deseq2.R
