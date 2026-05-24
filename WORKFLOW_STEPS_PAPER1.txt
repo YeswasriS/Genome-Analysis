@@ -48,3 +48,15 @@ STEP 8: Differential Expression
 - Input: Count tables
 - Output: DEG results
 - Script: scripts/09_deseq2.R
+
+STEP 9: Antibiotic Resistance Identification
+- Tool: ResFinder v4.7.2
+- Input: pacbio_canu.contigs.fasta
+- Output: resfinder results zip file
+- Website: https://cge.food.dtu.dk/services/ResFinder/
+
+STEP 10: SNP Calling
+- Tool: BCFtools v1.22
+- Input: BWA BAM files + annotated genome
+- Output: variants.vcf, variants_filtered.vcf
+- Script: scripts/10_snp_calling_bcftools.sh
