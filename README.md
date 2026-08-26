@@ -21,6 +21,8 @@ Yeswasri S — Uppsala University 2026
 - `quality_control/` — FastQC + Trimmomatic results
 - `expression_analysis/` — DESeq2 results
 - `results/` — HTSeq count tables
+- `resfinder/` — ResFinder antibiotic resistance results
+- `snp_analysis/` — BCFtools SNP calling results
 
 ## Wiki
 Full documentation available at:
